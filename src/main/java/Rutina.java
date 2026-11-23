@@ -1,22 +1,31 @@
 public class Rutina {
 
+    //Atributos
+    private String nombre;
+    private String[] ejercicios;
+    private String[] estiramientos;
+
     public Rutina(String nombre, int maxEjercicios, int maxEstiramientos) {
         // Inicialización de la rutina
+        this.nombre = nombre;
+        ejercicios = new String[maxEjercicios];
+        estiramientos = new String[maxEstiramientos];
     }
 
     public String getNombre() {
         // Devuelve el nombre de la rutina
-        return null; // @todo MODIFICAR PARA DEVOLVER EL NOMBRE DE LA RUTINA
+
+        return nombre; // @todo MODIFICAR PARA DEVOLVER EL NOMBRE DE LA RUTINA
     }
 
     public String[] getEjercicios() {
         // Devuelve los ejercicios de la rutina (array de longitud igual al número de ejercicios actuales)
-        return null; // @todo MODIFICAR PARA DEVOLVER LOS EJERCICIOS DE LA RUTINA
+        return ejercicios; // @todo MODIFICAR PARA DEVOLVER LOS EJERCICIOS DE LA RUTINA
     }
 
     public String[] getEstiramientos() {
         // Devuelve los estiramientos de la rutina (array de longitud igual al número de estiramientos actuales)
-        return null; // @todo MODIFICAR PARA DEVOLVER LOS ESTIRAMIENTOS DE LA RUTINA
+        return estiramientos; // @todo MODIFICAR PARA DEVOLVER LOS ESTIRAMIENTOS DE LA RUTINA
     }
 
     public boolean agregarEjercicio(String ejercicio) {
